@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::resource('/', LandingController::class);
 Route::get('/clubs', [LandingController::class, 'clubs'])->name('pages.clubs');
