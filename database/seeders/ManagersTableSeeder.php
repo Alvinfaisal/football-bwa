@@ -16,12 +16,12 @@ class ManagersTableSeeder extends Seeder
    */
   public function run()
   {
-    
+
 
     $managers = [
       [
         'clubs_id' => 1,
-        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237. png',
+        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237.png',
         'name'     => 'Thomas Tuchel ',
         'old'      => '47',
         'nationality'  => 'Germany',
@@ -31,7 +31,7 @@ class ManagersTableSeeder extends Seeder
 
       [
         'clubs_id' => 2,
-        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237. png',
+        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237.png',
         'name'     => 'Thomas Tuchel ',
         'old'      => '47',
         'nationality'  => 'Germany',
@@ -41,7 +41,7 @@ class ManagersTableSeeder extends Seeder
 
       [
         'clubs_id' => 3,
-        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237. png',
+        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237.png',
         'name'     => 'Thomas Tuchel ',
         'old'      => '47',
         'nationality'  => 'Germany',
@@ -51,7 +51,7 @@ class ManagersTableSeeder extends Seeder
 
       [
         'clubs_id' => 4,
-        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237. png',
+        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237.png',
         'name'     => 'Thomas Tuchel ',
         'old'      => '47',
         'nationality'  => 'Germany',
@@ -61,7 +61,7 @@ class ManagersTableSeeder extends Seeder
 
       [
         'clubs_id' => 5,
-        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237. png',
+        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237.png',
         'name'     => 'Thomas Tuchel ',
         'old'      => '47',
         'nationality'  => 'Germany',
@@ -71,7 +71,7 @@ class ManagersTableSeeder extends Seeder
 
       [
         'clubs_id' => 6,
-        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237. png',
+        'photo'    => 'https://resources.prenierleague.com/prenierleague/photos/players/250x250/man39237.png',
         'name'     => 'Thomas Tuchel ',
         'old'      => '47',
         'nationality'  => 'Germany',

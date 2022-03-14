@@ -41,97 +41,57 @@
 
                         <tbody class="bg-white divide-y divide-gray-200">
 
-                            <tr>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://resources.premierleague.com/premierleague/badges/t8.svg"
-                                                alt="">
-                                        </div>
-                                        <div class="ml-4">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                Chelsea FC
+                            @forelse ($clubs as $club)
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-10 w-10">
+                                                <img class="h-10 w-10 rounded-full" src="{{ $club->logo }}" alt="">
                                             </div>
-                                            <div class="text-sm text-gray-500">
-                                                chelseafc.com
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    Stamford Bridge
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    10
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://resources.premierleague.com/premierleague/badges/t1.svg"
-                                                alt="">
-                                        </div>
-                                        <div class="ml-4">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                Manchester United
-                                            </div>
-                                            <div class="text-sm text-gray-500">
-                                                www.manutd.com
+                                            <div class="ml-4">
+                                                <div class="text-sm font-medium text-gray-900">
+                                                    {{ $club->name ?? '' }}
+                                                </div>
+                                                <div class="text-sm text-gray-500">
+                                                    {{ $club->url ?? '' }}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                                </td>
-                            </tr>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        {{ $club->stadiums->name ?? '' }}
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        {{ $club->thropy ?? '' }}
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <div class="flex-shrink-0 h-10 w-10">
+                                                <img class="h-10 w-10 rounded-full" src="www.facebook.com" alt="">
+                                            </div>
+                                            <div class="ml-4">
+                                                <div class="text-sm font-medium text-gray-900">
+                                                    {{-- {{ $club->match_rivals->rivals->name }} --}}
+                                                    why
+                                                </div>
+                                                <div class="text-sm text-gray-500">
+                                                    {{-- {{ $club->match_rivals->rivals->url }} --}}
+                                                    why
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                        <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
+                                    </td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td class="px-6 py-4 whitespace-nowrap">Data Not Found</td>
+                                </tr>
+                            @endforelse
 
-                            <tr>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://resources.premierleague.com/premierleague/badges/t14.svg"
-                                                alt="">
-                                        </div>
-                                        <div class="ml-4">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                Liverpool
-                                            </div>
-                                            <div class="text-sm text-gray-500">
-                                                liverpool.com
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    Anfield
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    10
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap">
-                                    <div class="flex items-center">
-                                        <div class="flex-shrink-0 h-10 w-10">
-                                            <img class="h-10 w-10 rounded-full"
-                                                src="https://resources.premierleague.com/premierleague/badges/t43.svg"
-                                                alt="">
-                                        </div>
-                                        <div class="ml-4">
-                                            <div class="text-sm font-medium text-gray-900">
-                                                Manchester City
-                                            </div>
-                                            <div class="text-sm text-gray-500">
-                                                www.mancity.com
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Detail</a>
-                                </td>
-                            </tr>
+
 
                             <!-- More items... -->
                         </tbody>
@@ -142,5 +102,3 @@
     </div>
 
 @endsection
-
-
