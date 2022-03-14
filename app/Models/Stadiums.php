@@ -5,18 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Clubs extends Model
+class Stadiums extends Model
 {
   // use HasFactory;
 
-  public $table = 'clubs';
+  // Nama tabel pada database
+  public $table = 'stadiums';
 
+  // Fillable yang boleh diisi - untuk field id tidak perlu didaftarkan karena akan terisi otomatis increment
   protected $fillable = [
-    'stadiums_id',
     'name',
-    'logo',
-    'url',
-    'thropy',
+    'capacity',
+    'address',
     'created_at',
     'updated_at'
   ];

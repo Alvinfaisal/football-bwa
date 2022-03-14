@@ -5,18 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Clubs extends Model
+class Matches extends Model
 {
   // use HasFactory;
 
-  public $table = 'clubs';
+  public $table = 'matches';
 
   protected $fillable = [
-    'stadiums_id',
-    'name',
-    'logo',
-    'url',
-    'thropy',
+    'clubs_id',
+    'rivals_id',
+    'schedule',
     'created_at',
     'updated_at'
   ];

@@ -5,18 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Clubs extends Model
+class Managers extends Model
 {
   // use HasFactory;
 
-  public $table = 'clubs';
+  public $table = 'managers';
 
   protected $fillable = [
-    'stadiums_id',
+    'clubs_id',
     'name',
-    'logo',
-    'url',
-    'thropy',
+    'old',
+    'nationality',
     'created_at',
     'updated_at'
   ];
