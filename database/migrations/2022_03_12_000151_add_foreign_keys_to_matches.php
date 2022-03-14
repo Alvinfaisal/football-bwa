@@ -15,8 +15,8 @@ class AddForeignKeysToMatches extends Migration
   {
     Schema::table('matches', function (Blueprint $table) {
       //Make relation between matches table and clubs table 
-      $table->foreign('clubs_id', 'clubs_id_fk3')->references('id')->on('clubs')->onUpdate('CASCADE')->onDelete('RESTRICT');
-      $table->foreign('rivals_id', 'rivals_id_fk3')->references('id')->on('rivals')->onUpdate('CASCADE')->onDelete('RESTRICT');
+      $table->foreign('clubs_id', 'clubs_id_fk4')->references('id')->on('clubs')->onUpdate('CASCADE')->onDelete('RESTRICT');
+      $table->foreign('rivals_id', 'rivals_id_fk5')->references('id')->on('clubs')->onUpdate('CASCADE')->onDelete('RESTRICT');
     });
   }
 
@@ -29,8 +29,8 @@ class AddForeignKeysToMatches extends Migration
   {
     Schema::table('matches', function (Blueprint $table) {
       //Jika table matches melakukan penghapusan data maka data yang dihapus hanya foreign key nya saja
-      $table->dropForeign('clubs_id_fk3');
-      $table->dropForeign('rivals_id_fk3');
+      $table->dropForeign('clubs_id_fk4');
+      $table->dropForeign('rivals_id_fk5');
     });
   }
 }

@@ -21,13 +21,16 @@ class Matches extends Model
 
   // relation
 
+
   public function clubs()
   {
+    // Menjelaskan bahwa field  clubs_id pada table matches berelasi dengan id yang berada pada table clubs
     return $this->belongsTo('App\Models\Clubs', 'clubs_id', 'id');
   }
 
   public function rivals()
   {
+    // Menjelaskan bahwa field  rivals_id pada table matches berelasi dengan id yang berada pada table clubs
     return $this->belongsTo('App\Models\Clubs', 'rivals_id', 'id');
   }
 }

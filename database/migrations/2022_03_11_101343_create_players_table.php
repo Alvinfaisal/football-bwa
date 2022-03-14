@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 class CreatePlayersTable extends Migration
 {
@@ -15,7 +16,7 @@ class CreatePlayersTable extends Migration
   {
     Schema::create('players', function (Blueprint $table) {
       $table->id();
-      $table->integer('clubs_id');
+      $table->foreignId('clubs_id')->nullable()->index('clubs_id_fk2_idx');
       $table->longText('photo');
       $table->string('name');
       $table->string('height');

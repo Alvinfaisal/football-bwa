@@ -15,8 +15,7 @@ class StadiumsTableSeeder extends Seeder
    */
   public function run()
   {
-    //Trunctae
-    DB::table('stadiums')->truncate();
+
 
     $stadiums = [
       [

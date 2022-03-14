@@ -15,7 +15,7 @@ class AddForeignKeysToPlayers extends Migration
   {
     Schema::table('players', function (Blueprint $table) {
       //make relation between players table to clubs table
-      $table->foreign('clubs_id', 'clubs_id_fk3')->references('id')->on('clubs')->onUpdate('CASCADE')->onDelete('RESTRICT');
+      $table->foreign('clubs_id', 'clubs_id_fk2')->references('id')->on('clubs')->onUpdate('CASCADE')->onDelete('RESTRICT');
     });
   }
 
@@ -28,7 +28,7 @@ class AddForeignKeysToPlayers extends Migration
   {
     Schema::table('players', function (Blueprint $table) {
       //Jika data pada tabel player dihapus maka data yang dihapus hanya foreign key nya saja
-      $table->dropForeign('clubs_id_fk3');
+      $table->dropForeign('clubs_id_fk2');
     });
   }
 }

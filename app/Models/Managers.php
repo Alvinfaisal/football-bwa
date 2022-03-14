@@ -24,6 +24,7 @@ class Managers extends Model
 
   public function clubs()
   {
+    // Menjelaskan bahwa field  clubs_id pada table managers berelasi dengan id yang berada pada table clubs
     return $this->belongsTo('App\Models\Clubs', 'clubs_id', 'id');
   }
 }

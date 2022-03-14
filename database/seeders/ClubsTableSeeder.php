@@ -17,7 +17,7 @@ class ClubsTableSeeder extends Seeder
   {
     //truncate DB
     // Sebelum file seeder mengisi tabel, terlebih dahulu melakukan truncate, truncate adalah melakukan penghapusan sebuah tabel agar increment nya dari 0 kembali
-    DB::table('clubs')->truncate();
+    // DB::table('clubs')->truncate();
 
     $clubs = [
       [

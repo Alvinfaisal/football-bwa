@@ -15,8 +15,7 @@ class PlayersTableSeeder extends Seeder
    */
   public function run()
   {
-    //
-    DB::table('players')->truncate();
+
 
     $players = [
       [
@@ -25,8 +24,8 @@ class PlayersTableSeeder extends Seeder
         'name'       => 'Timo Werner',
         'height'     => '180',
         'Position'   => 'Forward',
-        'created at' => '2021-03-21 00:00:00',
-        'updated at' => '2021-03-21 00:00:00',
+        'created_at' => '2021-03-21 00:00:00',
+        'updated_at' => '2021-03-21 00:00:00',
       ],
 
       [
@@ -35,8 +34,8 @@ class PlayersTableSeeder extends Seeder
         'name'       => 'Timo Werner',
         'height'     => '180',
         'Position'   => 'Forward',
-        'created at' => '2021-03-21 00:00:00',
-        'updated at' => '2021-03-21 00:00:00',
+        'created_at' => '2021-03-21 00:00:00',
+        'updated_at' => '2021-03-21 00:00:00',
       ],
 
       [
@@ -45,8 +44,8 @@ class PlayersTableSeeder extends Seeder
         'name'       => 'Timo Werner',
         'height'     => '180',
         'Position'   => 'Forward',
-        'created at' => '2021-03-21 00:00:00',
-        'updated at' => '2021-03-21 00:00:00',
+        'created_at' => '2021-03-21 00:00:00',
+        'updated_at' => '2021-03-21 00:00:00',
       ],
 
       [
@@ -55,8 +54,8 @@ class PlayersTableSeeder extends Seeder
         'name'       => 'Timo Werner',
         'height'     => '180',
         'Position'   => 'Forward',
-        'created at' => '2021-03-21 00:00:00',
-        'updated at' => '2021-03-21 00:00:00',
+        'created_at' => '2021-03-21 00:00:00',
+        'updated_at' => '2021-03-21 00:00:00',
       ],
 
       [
@@ -65,8 +64,8 @@ class PlayersTableSeeder extends Seeder
         'name'       => 'Timo Werner',
         'height'     => '180',
         'Position'   => 'Forward',
-        'created at' => '2021-03-21 00:00:00',
-        'updated at' => '2021-03-21 00:00:00',
+        'created_at' => '2021-03-21 00:00:00',
+        'updated_at' => '2021-03-21 00:00:00',
       ],
 
       [
@@ -75,8 +74,8 @@ class PlayersTableSeeder extends Seeder
         'name'       => 'Timo Werner',
         'height'     => '180',
         'Position'   => 'Forward',
-        'created at' => '2021-03-21 00:00:00',
-        'updated at' => '2021-03-21 00:00:00',
+        'created_at' => '2021-03-21 00:00:00',
+        'updated_at' => '2021-03-21 00:00:00',
       ],
 
     ];

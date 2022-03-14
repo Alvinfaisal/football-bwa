@@ -22,9 +22,10 @@ class Players extends Model
 
 
   // relation 
-  
+
   public function clubs()
   {
+    // Menjelaskan bahwa field clubs_id pada table palyers berelasi dengan id yang berada pada table clubs
     return $this->belongsTo('APP\Models\Clubs', 'clubs_id', 'id');
   }
 }
